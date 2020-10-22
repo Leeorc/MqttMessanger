@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity()
     private lateinit var mqttClientLast: MqttLast
       val mqttClient1= MqttClient(this)
 
-    val topic = "leeorc/f/xx"
+    val topic = "leeorc/f/sharira46"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

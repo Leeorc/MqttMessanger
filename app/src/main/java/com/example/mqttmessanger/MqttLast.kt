@@ -22,8 +22,8 @@ class MqttLast {
     }
 
     fun connect(context: Context) {
-       // val serverURI = "tcp://broker.emqx.io:1883"
-        val serverURI = "tcp://io.adafruit.com:1883"
+        val serverURI = "tcp://broker.emqx.io:1883"
+      //  val serverURI = "tcp://io.adafruit.com:1883"
         val userName = "leeorc"
         val pwd      = "aio_MPaK82bhzPeAMVmlso7tQDxr9SCI"
 
@@ -45,8 +45,8 @@ class MqttLast {
         try {
             Log.d(TAG, "Connecting: " + mqttClient.serverURI)
             options.connectionTimeout = 120
-            options.userName = userName
-            options.password = pwd.toCharArray()
+           // options.userName = userName
+          //  options.password = pwd.toCharArray()
             mqttClient.connect(options, null, object : IMqttActionListener {
                 override fun onSuccess(asyncActionToken: IMqttToken?) {
                     Log.i(TAG, "Connection success")
